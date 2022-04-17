@@ -57,7 +57,7 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'stimsheet.xlsx', 'path': 'stimsheet.xlsx'}
+    {'name': 'quotes_stims.xlsx', 'path': 'quotes_stims.xlsx'}
   ]
 });
 
@@ -258,7 +258,7 @@ function trialsLoopBegin(trialsLoopScheduler, snapshot) {
       psychoJS: psychoJS,
       nReps: 1, method: TrialHandler.Method.RANDOM,
       extraInfo: expInfo, originPath: undefined,
-      trialList: 'stimsheet.xlsx',
+      trialList: 'quotes_stims.xlsx',
       seed: undefined, name: 'trials'
     });
     psychoJS.experiment.addLoop(trials); // add the loop to the experiment
