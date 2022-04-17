@@ -44,9 +44,10 @@ flowScheduler.add(experimentInit);
 flowScheduler.add(instructionRoutineBegin());
 flowScheduler.add(instructionRoutineEachFrame());
 flowScheduler.add(instructionRoutineEnd());
-flowScheduler.add(trialRoutineBegin());
-flowScheduler.add(trialRoutineEachFrame());
-flowScheduler.add(trialRoutineEnd());
+const trialsLoopScheduler = new Scheduler(psychoJS);
+flowScheduler.add(trialsLoopBegin(trialsLoopScheduler));
+flowScheduler.add(trialsLoopScheduler);
+flowScheduler.add(trialsLoopEnd);
 flowScheduler.add(quitPsychoJS, '', true);
 
 // quit if user presses Cancel in dialog box:
@@ -56,7 +57,37 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'stimuli copy/arjun-kapoor-Om3JbZp3CCo-unsplash.jpeg', 'path': 'stimuli copy/arjun-kapoor-Om3JbZp3CCo-unsplash.jpeg'}
+    {'name': 'stimuli copy/mae-mu-KXq1wGn_OXI-unsplash.jpeg', 'path': 'stimuli copy/mae-mu-KXq1wGn_OXI-unsplash.jpeg'},
+    {'name': 'stimuli copy/anthony-intraversato-xr43RescWSA-unsplash.jpeg', 'path': 'stimuli copy/anthony-intraversato-xr43RescWSA-unsplash.jpeg'},
+    {'name': 'stimuli copy/daniela-cuevas-t7YycgAoVSw-unsplash.jpeg', 'path': 'stimuli copy/daniela-cuevas-t7YycgAoVSw-unsplash.jpeg'},
+    {'name': 'stimuli copy/alexandre-chambon-ADqQgiStp4c-unsplash.jpeg', 'path': 'stimuli copy/alexandre-chambon-ADqQgiStp4c-unsplash.jpeg'},
+    {'name': 'stimuli copy/jordan-graff-87111nn8z_w-unsplash.jpeg', 'path': 'stimuli copy/jordan-graff-87111nn8z_w-unsplash.jpeg'},
+    {'name': 'stimuli copy/natalya-letunova-eCfCIwtKdsg-unsplash.jpeg', 'path': 'stimuli copy/natalya-letunova-eCfCIwtKdsg-unsplash.jpeg'},
+    {'name': 'stimuli copy/gritt-zheng-K88BVN6yMrU-unsplash.jpeg', 'path': 'stimuli copy/gritt-zheng-K88BVN6yMrU-unsplash.jpeg'},
+    {'name': 'stimuli copy/darya-sev-QRdX9dO8poY-unsplash.jpeg', 'path': 'stimuli copy/darya-sev-QRdX9dO8poY-unsplash.jpeg'},
+    {'name': 'stimuli copy/jack-b-JYZYRF0j_Uc-unsplash.jpeg', 'path': 'stimuli copy/jack-b-JYZYRF0j_Uc-unsplash.jpeg'},
+    {'name': 'stimuli copy/mwangi-gatheca-hvvNY6b8pE0-unsplash.jpeg', 'path': 'stimuli copy/mwangi-gatheca-hvvNY6b8pE0-unsplash.jpeg'},
+    {'name': 'stimuli copy/marek-mucha-PfmNfCXcrdw-unsplash.jpeg', 'path': 'stimuli copy/marek-mucha-PfmNfCXcrdw-unsplash.jpeg'},
+    {'name': 'stimuli copy/drew-farwell-ScLYGfuCqQg-unsplash.jpeg', 'path': 'stimuli copy/drew-farwell-ScLYGfuCqQg-unsplash.jpeg'},
+    {'name': 'stimuli copy/daniel-mirlea-w4lzk2_Yasc-unsplash.jpeg', 'path': 'stimuli copy/daniel-mirlea-w4lzk2_Yasc-unsplash.jpeg'},
+    {'name': 'stimuli copy/arjun-kapoor-Om3JbZp3CCo-unsplash.jpeg', 'path': 'stimuli copy/arjun-kapoor-Om3JbZp3CCo-unsplash.jpeg'},
+    {'name': 'stimuli copy/jake-remy-QBAMncfwXr8-unsplash.jpeg', 'path': 'stimuli copy/jake-remy-QBAMncfwXr8-unsplash.jpeg'},
+    {'name': 'stimuli copy/eberhard-grossgasteiger-fTlXjG24mQ0-unsplash.jpeg', 'path': 'stimuli copy/eberhard-grossgasteiger-fTlXjG24mQ0-unsplash.jpeg'},
+    {'name': 'stimuli copy/chris-leipelt-fqoHScXjiW4-unsplash.jpeg', 'path': 'stimuli copy/chris-leipelt-fqoHScXjiW4-unsplash.jpeg'},
+    {'name': 'stimuli copy/ori-song-eK2YZq4a0fU-unsplash.jpeg', 'path': 'stimuli copy/ori-song-eK2YZq4a0fU-unsplash.jpeg'},
+    {'name': 'stimuli copy/mathew-schwartz-3z56aMRpjJ0-unsplash.jpeg', 'path': 'stimuli copy/mathew-schwartz-3z56aMRpjJ0-unsplash.jpeg'},
+    {'name': 'stimuli copy/jared-rice-WbOn78k-ywU-unsplash.jpeg', 'path': 'stimuli copy/jared-rice-WbOn78k-ywU-unsplash.jpeg'},
+    {'name': 'stimuli copy/library-of-congress-VFTxZaIsDAs-unsplash.jpeg', 'path': 'stimuli copy/library-of-congress-VFTxZaIsDAs-unsplash.jpeg'},
+    {'name': 'stimuli copy/chuttersnap-6ELMRvIuJ1g-unsplash.jpeg', 'path': 'stimuli copy/chuttersnap-6ELMRvIuJ1g-unsplash.jpeg'},
+    {'name': 'stimuli copy/aaron-burden-xNsoHwvoHnY-unsplash.jpeg', 'path': 'stimuli copy/aaron-burden-xNsoHwvoHnY-unsplash.jpeg'},
+    {'name': 'stimuli copy/max-saeling-ymfYqeKN-FU-unsplash.jpeg', 'path': 'stimuli copy/max-saeling-ymfYqeKN-FU-unsplash.jpeg'},
+    {'name': 'stimuli copy/long-truong-vRepMA0VQ54-unsplash.jpeg', 'path': 'stimuli copy/long-truong-vRepMA0VQ54-unsplash.jpeg'},
+    {'name': 'stimuli copy/ryan-wu-9R5FnAn5tYM-unsplash.jpeg', 'path': 'stimuli copy/ryan-wu-9R5FnAn5tYM-unsplash.jpeg'},
+    {'name': 'stimuli copy/james-haworth-Hm7BtNRT6eE-unsplash.jpeg', 'path': 'stimuli copy/james-haworth-Hm7BtNRT6eE-unsplash.jpeg'},
+    {'name': 'stimuli copy/michel-kimkongrath-EWpsHYyDL34-unsplash.jpeg', 'path': 'stimuli copy/michel-kimkongrath-EWpsHYyDL34-unsplash.jpeg'},
+    {'name': 'stimulus_sheet.xlsx', 'path': 'stimulus_sheet.xlsx'},
+    {'name': 'stimuli copy/diego-ph-xW42e724p00-unsplash.jpeg', 'path': 'stimuli copy/diego-ph-xW42e724p00-unsplash.jpeg'},
+    {'name': 'stimuli copy/dave-hoefler-oi65oz2xNag-unsplash.jpeg', 'path': 'stimuli copy/dave-hoefler-oi65oz2xNag-unsplash.jpeg'}
   ]
 });
 
@@ -246,6 +277,45 @@ function instructionRoutineEnd() {
 }
 
 
+var trials;
+var currentLoop;
+function trialsLoopBegin(trialsLoopScheduler, snapshot) {
+  return async function() {
+    TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
+    
+    // set up handler to look after randomisation of conditions etc
+    trials = new TrialHandler({
+      psychoJS: psychoJS,
+      nReps: 1, method: TrialHandler.Method.RANDOM,
+      extraInfo: expInfo, originPath: undefined,
+      trialList: 'stimulus_sheet.xlsx',
+      seed: undefined, name: 'trials'
+    });
+    psychoJS.experiment.addLoop(trials); // add the loop to the experiment
+    currentLoop = trials;  // we're now the current loop
+    
+    // Schedule all the trials in the trialList:
+    for (const thisTrial of trials) {
+      const snapshot = trials.getSnapshot();
+      trialsLoopScheduler.add(importConditions(snapshot));
+      trialsLoopScheduler.add(trialRoutineBegin(snapshot));
+      trialsLoopScheduler.add(trialRoutineEachFrame());
+      trialsLoopScheduler.add(trialRoutineEnd());
+      trialsLoopScheduler.add(endLoopIteration(trialsLoopScheduler, snapshot));
+    }
+    
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+async function trialsLoopEnd() {
+  psychoJS.experiment.removeLoop(trials);
+
+  return Scheduler.Event.NEXT;
+}
+
+
 var gotValidClick;
 var trialComponents;
 function trialRoutineBegin(snapshot) {
@@ -259,7 +329,7 @@ function trialRoutineBegin(snapshot) {
     continueRoutine = true; // until we're told otherwise
     routineTimer.add(5.000000);
     // update component parameters for each repeat
-    image.setImage('stimuli copy/arjun-kapoor-Om3JbZp3CCo-unsplash.jpeg');
+    image.setImage(stimulus);
     // setup some python lists for storing info about the mouse
     // current position of the mouse:
     mouse.x = [];
