@@ -135,7 +135,7 @@ async function experimentInit() {
     text: 'Welcome! \n\nIn this experiment, you will see a total of 30 images. You will see each image for 5 seconds. In these 5 seconds, please click the part of the image that you find the most salient or attention-grabbing. \n\nPress any key to begin! ',
     font: 'Open Sans',
     units: undefined, 
-    pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0.0,
+    pos: [0, 0], height: 1.0,  wrapWidth: undefined, ori: 0.0,
     color: new util.Color('white'),  opacity: undefined,
     depth: 0.0 
   });
@@ -148,7 +148,7 @@ async function experimentInit() {
     win : psychoJS.window,
     name : 'image', units : undefined, 
     image : undefined, mask : undefined,
-    ori : 0.0, pos : [0, 0], size : [0.5, 0.5],
+    ori : 0.0, pos : [0, 0], size : [224, 224],
     color : new util.Color([1, 1, 1]), opacity : undefined,
     flipHoriz : false, flipVert : false,
     texRes : 128.0, interpolate : true, depth : 0.0 
