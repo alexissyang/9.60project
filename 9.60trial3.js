@@ -25,7 +25,7 @@ const psychoJS = new PsychoJS({
 psychoJS.openWindow({
   fullscr: true,
   color: new util.Color([0, 0, 0]),
-  units: 'height',
+  units: 'pix',
   waitBlanking: true
 });
 // schedule the experiment:
