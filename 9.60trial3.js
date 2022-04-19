@@ -146,7 +146,7 @@ async function experimentInit() {
   trialClock = new util.Clock();
   image = new visual.ImageStim({
     win : psychoJS.window,
-    name : 'image', units : 'height', 
+    name : 'image', units : undefined, 
     image : undefined, mask : undefined,
     ori : 0.0, pos : [0, 0], size : [0.5, 0.5],
     color : new util.Color([1, 1, 1]), opacity : undefined,
