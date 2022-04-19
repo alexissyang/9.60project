@@ -135,7 +135,7 @@ async function experimentInit() {
     text: 'Welcome! \n\nIn this experiment, you will see a total of 30 images. You will see each image for 5 seconds. In these 5 seconds, please click the part of the image that you find the most salient or attention-grabbing. \n\nPress any key to begin! ',
     font: 'Open Sans',
     units: undefined, 
-    pos: [0, 0], height: 16.0,  wrapWidth: undefined, ori: 0.0,
+    pos: [0, 0], height: 24.0,  wrapWidth: undefined, ori: 0.0,
     color: new util.Color('white'),  opacity: undefined,
     depth: 0.0 
   });

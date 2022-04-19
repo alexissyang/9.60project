@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Tue Apr 19 12:38:10 2022
+    on Tue Apr 19 12:40:54 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -88,7 +88,7 @@ instructionClock = core.Clock()
 text = visual.TextStim(win=win, name='text',
     text='Welcome! \n\nIn this experiment, you will see a total of 30 images. You will see each image for 5 seconds. In these 5 seconds, please click the part of the image that you find the most salient or attention-grabbing. \n\nPress any key to begin! ',
     font='Open Sans',
-    pos=(0, 0), height=16.0, wrapWidth=None, ori=0.0, 
+    pos=(0, 0), height=24.0, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=0.0);
