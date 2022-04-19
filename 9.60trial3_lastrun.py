@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Tue Apr 19 12:16:48 2022
+    on Tue Apr 19 12:25:41 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -69,7 +69,7 @@ win = visual.Window(
     winType='pyglet', allowGUI=False, allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True, 
-    units='pix')
+    units='height')
 # store frame rate of monitor if we can measure it
 expInfo['frameRate'] = win.getActualFrameRate()
 if expInfo['frameRate'] != None:
@@ -98,9 +98,9 @@ key_resp = keyboard.Keyboard()
 trialClock = core.Clock()
 image = visual.ImageStim(
     win=win,
-    name='image', units='pix', 
+    name='image', units='height', 
     image='sin', mask=None,
-    ori=0.0, pos=(0,0), size=(224,224),
+    ori=0.0, pos=(0,0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=None,
     flipHoriz=False, flipVert=False,
     texRes=128.0, interpolate=True, depth=0.0)
@@ -361,7 +361,7 @@ for thisTrial in trials:
     
     # ------Prepare to start Routine "pause"-------
     continueRoutine = True
-    routineTimer.add(2.000000)
+    routineTimer.add(1.500000)
     # update component parameters for each repeat
     # keep track of which components have finished
     pauseComponents = [text_2]
@@ -397,7 +397,7 @@ for thisTrial in trials:
             text_2.setAutoDraw(True)
         if text_2.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > text_2.tStartRefresh + 2.0-frameTolerance:
+            if tThisFlipGlobal > text_2.tStartRefresh + 1.5-frameTolerance:
                 # keep track of stop time/frame for later
                 text_2.tStop = t  # not accounting for scr refresh
                 text_2.frameNStop = frameN  # exact frame index

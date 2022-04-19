@@ -17,7 +17,7 @@ const psychoJS = new PsychoJS({
 psychoJS.openWindow({
   fullscr: true,
   color: new util.Color([0, 0, 0]),
-  units: 'pix',
+  units: 'height',
   waitBlanking: true
 });
 // schedule the experiment:
@@ -138,9 +138,9 @@ async function experimentInit() {
   trialClock = new util.Clock();
   image = new visual.ImageStim({
     win : psychoJS.window,
-    name : 'image', units : 'pix', 
+    name : 'image', units : 'height', 
     image : undefined, mask : undefined,
-    ori : 0.0, pos : [0, 0], size : [224, 224],
+    ori : 0.0, pos : [0, 0], size : [0.5, 0.5],
     color : new util.Color([1, 1, 1]), opacity : undefined,
     flipHoriz : false, flipVert : false,
     texRes : 128.0, interpolate : true, depth : 0.0 
