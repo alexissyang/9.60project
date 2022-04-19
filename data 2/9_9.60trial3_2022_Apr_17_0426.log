@@ -1,0 +1,24 @@
+1.1898 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+5.9360 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1440, 900]. Using actual size
+7.6248 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+7.6262 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fd2062fda90>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fd20598e780>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 225.0], screen=0, size=array([2880, 1800]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.6266 	EXP 	window1: mouseVisible = True
+7.6267 	EXP 	window1: recordFrameIntervals = False
+7.7358 	EXP 	window1: recordFrameIntervals = True
+8.5689 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+10.7061 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+11.2150 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128.0, units='height', win=Window(...))
+11.2152 	EXP 	window1: mouseVisible = True
+11.2260 	WARNING 	t of last frame was 2657.42ms (=1/0)
+11.2260 	EXP 	text: autoDraw = True
+11.8908 	EXP 	Imported stimulus_sheet.xlsx as conditions, 30 conditions, 1 params
+11.8971 	EXP 	Created sequence: random, trialTypes=30, nReps=1, seed=None
+11.8976 	EXP 	New trial (rep=0, index=0): {'stimulus': '/stimuli copy/daniel-mirlea-w4lzk2_Yasc-unsplash.jpeg'}
+11.8978 	DEPRECATION 	Couldn't find image /stimuli copy/daniel-mirlea-w4lzk2_Yasc-unsplash.jpeg; check path? (tried: /stimuli copy/daniel-mirlea-w4lzk2_Yasc-unsplash.jpeg)
+11.9265 	EXP 	window1: mouseVisible = True

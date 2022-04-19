@@ -1,0 +1,3 @@
+﻿stimulus,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,image.started,image.stopped,mouse.x,mouse.y,mouse.leftButton,mouse.midButton,mouse.rightButton,mouse.time,mouse.started,mouse.stopped,participant,session,date,expName,psychopyVersion,frameRate,
+stimuli copy/arjun-kapoor-Om3JbZp3CCo-unsplash.jpeg,0,0,0,3,13.95673400000669,None,5.0,-12.0,1,0,0,1.2961475839838386,0.009376107482239604,None,10,001,2022_Apr_19_1153,9.60trial3,2021.2.3,None,
+stimuli copy/daniela-cuevas-t7YycgAoVSw-unsplash.jpeg,0,1,1,7,15.608203416923061,None,-23.0,14.0,1,0,0,0.7568785829935223,0.0036986323539167643,None,10,001,2022_Apr_19_1153,9.60trial3,2021.2.3,None,

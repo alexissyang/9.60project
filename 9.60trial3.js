@@ -25,7 +25,7 @@ const psychoJS = new PsychoJS({
 psychoJS.openWindow({
   fullscr: true,
   color: new util.Color([0, 0, 0]),
-  units: 'height',
+  units: 'pix',
   waitBlanking: true
 });
 // schedule the experiment:
@@ -57,38 +57,38 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'stimuli copy/mae-mu-KXq1wGn_OXI-unsplash.jpeg', 'path': 'stimuli copy/mae-mu-KXq1wGn_OXI-unsplash.jpeg'},
-    {'name': 'stimuli copy/anthony-intraversato-xr43RescWSA-unsplash.jpeg', 'path': 'stimuli copy/anthony-intraversato-xr43RescWSA-unsplash.jpeg'},
-    {'name': 'stimuli copy/daniela-cuevas-t7YycgAoVSw-unsplash.jpeg', 'path': 'stimuli copy/daniela-cuevas-t7YycgAoVSw-unsplash.jpeg'},
-    {'name': 'no_quotes.xlsx', 'path': 'no_quotes.xlsx'},
-    {'name': 'stimuli copy/alexandre-chambon-ADqQgiStp4c-unsplash.jpeg', 'path': 'stimuli copy/alexandre-chambon-ADqQgiStp4c-unsplash.jpeg'},
-    {'name': 'stimuli copy/jordan-graff-87111nn8z_w-unsplash.jpeg', 'path': 'stimuli copy/jordan-graff-87111nn8z_w-unsplash.jpeg'},
-    {'name': 'stimuli copy/natalya-letunova-eCfCIwtKdsg-unsplash.jpeg', 'path': 'stimuli copy/natalya-letunova-eCfCIwtKdsg-unsplash.jpeg'},
-    {'name': 'stimuli copy/gritt-zheng-K88BVN6yMrU-unsplash.jpeg', 'path': 'stimuli copy/gritt-zheng-K88BVN6yMrU-unsplash.jpeg'},
-    {'name': 'stimuli copy/darya-sev-QRdX9dO8poY-unsplash.jpeg', 'path': 'stimuli copy/darya-sev-QRdX9dO8poY-unsplash.jpeg'},
-    {'name': 'stimuli copy/jack-b-JYZYRF0j_Uc-unsplash.jpeg', 'path': 'stimuli copy/jack-b-JYZYRF0j_Uc-unsplash.jpeg'},
-    {'name': 'stimuli copy/mwangi-gatheca-hvvNY6b8pE0-unsplash.jpeg', 'path': 'stimuli copy/mwangi-gatheca-hvvNY6b8pE0-unsplash.jpeg'},
-    {'name': 'stimuli copy/marek-mucha-PfmNfCXcrdw-unsplash.jpeg', 'path': 'stimuli copy/marek-mucha-PfmNfCXcrdw-unsplash.jpeg'},
     {'name': 'stimuli copy/drew-farwell-ScLYGfuCqQg-unsplash.jpeg', 'path': 'stimuli copy/drew-farwell-ScLYGfuCqQg-unsplash.jpeg'},
-    {'name': 'stimuli copy/samuel-clara-HkZVyO9l_Ig-unsplash.jpeg', 'path': 'stimuli copy/samuel-clara-HkZVyO9l_Ig-unsplash.jpeg'},
-    {'name': 'stimuli copy/daniel-mirlea-w4lzk2_Yasc-unsplash.jpeg', 'path': 'stimuli copy/daniel-mirlea-w4lzk2_Yasc-unsplash.jpeg'},
-    {'name': 'stimuli copy/arjun-kapoor-Om3JbZp3CCo-unsplash.jpeg', 'path': 'stimuli copy/arjun-kapoor-Om3JbZp3CCo-unsplash.jpeg'},
-    {'name': 'stimuli copy/jake-remy-QBAMncfwXr8-unsplash.jpeg', 'path': 'stimuli copy/jake-remy-QBAMncfwXr8-unsplash.jpeg'},
-    {'name': 'stimuli copy/eberhard-grossgasteiger-fTlXjG24mQ0-unsplash.jpeg', 'path': 'stimuli copy/eberhard-grossgasteiger-fTlXjG24mQ0-unsplash.jpeg'},
-    {'name': 'stimuli copy/chris-leipelt-fqoHScXjiW4-unsplash.jpeg', 'path': 'stimuli copy/chris-leipelt-fqoHScXjiW4-unsplash.jpeg'},
-    {'name': 'stimuli copy/ori-song-eK2YZq4a0fU-unsplash.jpeg', 'path': 'stimuli copy/ori-song-eK2YZq4a0fU-unsplash.jpeg'},
     {'name': 'stimuli copy/mathew-schwartz-3z56aMRpjJ0-unsplash.jpeg', 'path': 'stimuli copy/mathew-schwartz-3z56aMRpjJ0-unsplash.jpeg'},
-    {'name': 'stimuli copy/jared-rice-WbOn78k-ywU-unsplash.jpeg', 'path': 'stimuli copy/jared-rice-WbOn78k-ywU-unsplash.jpeg'},
-    {'name': 'stimuli copy/library-of-congress-VFTxZaIsDAs-unsplash.jpeg', 'path': 'stimuli copy/library-of-congress-VFTxZaIsDAs-unsplash.jpeg'},
-    {'name': 'stimuli copy/chuttersnap-6ELMRvIuJ1g-unsplash.jpeg', 'path': 'stimuli copy/chuttersnap-6ELMRvIuJ1g-unsplash.jpeg'},
+    {'name': 'stimuli copy/jordan-graff-87111nn8z_w-unsplash.jpeg', 'path': 'stimuli copy/jordan-graff-87111nn8z_w-unsplash.jpeg'},
     {'name': 'stimuli copy/aaron-burden-xNsoHwvoHnY-unsplash.jpeg', 'path': 'stimuli copy/aaron-burden-xNsoHwvoHnY-unsplash.jpeg'},
-    {'name': 'stimuli copy/max-saeling-ymfYqeKN-FU-unsplash.jpeg', 'path': 'stimuli copy/max-saeling-ymfYqeKN-FU-unsplash.jpeg'},
-    {'name': 'stimuli copy/long-truong-vRepMA0VQ54-unsplash.jpeg', 'path': 'stimuli copy/long-truong-vRepMA0VQ54-unsplash.jpeg'},
-    {'name': 'stimuli copy/ryan-wu-9R5FnAn5tYM-unsplash.jpeg', 'path': 'stimuli copy/ryan-wu-9R5FnAn5tYM-unsplash.jpeg'},
-    {'name': 'stimuli copy/james-haworth-Hm7BtNRT6eE-unsplash.jpeg', 'path': 'stimuli copy/james-haworth-Hm7BtNRT6eE-unsplash.jpeg'},
-    {'name': 'stimuli copy/michel-kimkongrath-EWpsHYyDL34-unsplash.jpeg', 'path': 'stimuli copy/michel-kimkongrath-EWpsHYyDL34-unsplash.jpeg'},
+    {'name': 'stimuli copy/alexandre-chambon-ADqQgiStp4c-unsplash.jpeg', 'path': 'stimuli copy/alexandre-chambon-ADqQgiStp4c-unsplash.jpeg'},
+    {'name': 'no_quotes.xlsx', 'path': 'no_quotes.xlsx'},
+    {'name': 'stimuli copy/anthony-intraversato-xr43RescWSA-unsplash.jpeg', 'path': 'stimuli copy/anthony-intraversato-xr43RescWSA-unsplash.jpeg'},
+    {'name': 'stimuli copy/darya-sev-QRdX9dO8poY-unsplash.jpeg', 'path': 'stimuli copy/darya-sev-QRdX9dO8poY-unsplash.jpeg'},
     {'name': 'stimuli copy/diego-ph-xW42e724p00-unsplash.jpeg', 'path': 'stimuli copy/diego-ph-xW42e724p00-unsplash.jpeg'},
-    {'name': 'stimuli copy/dave-hoefler-oi65oz2xNag-unsplash.jpeg', 'path': 'stimuli copy/dave-hoefler-oi65oz2xNag-unsplash.jpeg'}
+    {'name': 'stimuli copy/ori-song-eK2YZq4a0fU-unsplash.jpeg', 'path': 'stimuli copy/ori-song-eK2YZq4a0fU-unsplash.jpeg'},
+    {'name': 'stimuli copy/ryan-wu-9R5FnAn5tYM-unsplash.jpeg', 'path': 'stimuli copy/ryan-wu-9R5FnAn5tYM-unsplash.jpeg'},
+    {'name': 'stimuli copy/library-of-congress-VFTxZaIsDAs-unsplash.jpeg', 'path': 'stimuli copy/library-of-congress-VFTxZaIsDAs-unsplash.jpeg'},
+    {'name': 'stimuli copy/marek-mucha-PfmNfCXcrdw-unsplash.jpeg', 'path': 'stimuli copy/marek-mucha-PfmNfCXcrdw-unsplash.jpeg'},
+    {'name': 'stimuli copy/chuttersnap-6ELMRvIuJ1g-unsplash.jpeg', 'path': 'stimuli copy/chuttersnap-6ELMRvIuJ1g-unsplash.jpeg'},
+    {'name': 'stimuli copy/natalya-letunova-eCfCIwtKdsg-unsplash.jpeg', 'path': 'stimuli copy/natalya-letunova-eCfCIwtKdsg-unsplash.jpeg'},
+    {'name': 'stimuli copy/samuel-clara-HkZVyO9l_Ig-unsplash.jpeg', 'path': 'stimuli copy/samuel-clara-HkZVyO9l_Ig-unsplash.jpeg'},
+    {'name': 'stimuli copy/jake-remy-QBAMncfwXr8-unsplash.jpeg', 'path': 'stimuli copy/jake-remy-QBAMncfwXr8-unsplash.jpeg'},
+    {'name': 'stimuli copy/mae-mu-KXq1wGn_OXI-unsplash.jpeg', 'path': 'stimuli copy/mae-mu-KXq1wGn_OXI-unsplash.jpeg'},
+    {'name': 'stimuli copy/daniel-mirlea-w4lzk2_Yasc-unsplash.jpeg', 'path': 'stimuli copy/daniel-mirlea-w4lzk2_Yasc-unsplash.jpeg'},
+    {'name': 'stimuli copy/dave-hoefler-oi65oz2xNag-unsplash.jpeg', 'path': 'stimuli copy/dave-hoefler-oi65oz2xNag-unsplash.jpeg'},
+    {'name': 'stimuli copy/long-truong-vRepMA0VQ54-unsplash.jpeg', 'path': 'stimuli copy/long-truong-vRepMA0VQ54-unsplash.jpeg'},
+    {'name': 'stimuli copy/jared-rice-WbOn78k-ywU-unsplash.jpeg', 'path': 'stimuli copy/jared-rice-WbOn78k-ywU-unsplash.jpeg'},
+    {'name': 'stimuli copy/chris-leipelt-fqoHScXjiW4-unsplash.jpeg', 'path': 'stimuli copy/chris-leipelt-fqoHScXjiW4-unsplash.jpeg'},
+    {'name': 'stimuli copy/eberhard-grossgasteiger-fTlXjG24mQ0-unsplash.jpeg', 'path': 'stimuli copy/eberhard-grossgasteiger-fTlXjG24mQ0-unsplash.jpeg'},
+    {'name': 'stimuli copy/michel-kimkongrath-EWpsHYyDL34-unsplash.jpeg', 'path': 'stimuli copy/michel-kimkongrath-EWpsHYyDL34-unsplash.jpeg'},
+    {'name': 'stimuli copy/mwangi-gatheca-hvvNY6b8pE0-unsplash.jpeg', 'path': 'stimuli copy/mwangi-gatheca-hvvNY6b8pE0-unsplash.jpeg'},
+    {'name': 'stimuli copy/daniela-cuevas-t7YycgAoVSw-unsplash.jpeg', 'path': 'stimuli copy/daniela-cuevas-t7YycgAoVSw-unsplash.jpeg'},
+    {'name': 'stimuli copy/james-haworth-Hm7BtNRT6eE-unsplash.jpeg', 'path': 'stimuli copy/james-haworth-Hm7BtNRT6eE-unsplash.jpeg'},
+    {'name': 'stimuli copy/gritt-zheng-K88BVN6yMrU-unsplash.jpeg', 'path': 'stimuli copy/gritt-zheng-K88BVN6yMrU-unsplash.jpeg'},
+    {'name': 'stimuli copy/arjun-kapoor-Om3JbZp3CCo-unsplash.jpeg', 'path': 'stimuli copy/arjun-kapoor-Om3JbZp3CCo-unsplash.jpeg'},
+    {'name': 'stimuli copy/jack-b-JYZYRF0j_Uc-unsplash.jpeg', 'path': 'stimuli copy/jack-b-JYZYRF0j_Uc-unsplash.jpeg'},
+    {'name': 'stimuli copy/max-saeling-ymfYqeKN-FU-unsplash.jpeg', 'path': 'stimuli copy/max-saeling-ymfYqeKN-FU-unsplash.jpeg'}
   ]
 });
 
@@ -122,6 +122,8 @@ var key_resp;
 var trialClock;
 var image;
 var mouse;
+var pauseClock;
+var text_2;
 var globalClock;
 var routineTimer;
 async function experimentInit() {
@@ -144,9 +146,9 @@ async function experimentInit() {
   trialClock = new util.Clock();
   image = new visual.ImageStim({
     win : psychoJS.window,
-    name : 'image', units : undefined, 
+    name : 'image', units : 'pix', 
     image : undefined, mask : undefined,
-    ori : 0.0, pos : [0, 0], size : [0.5, 0.5],
+    ori : 0.0, pos : [0, 0], size : [224, 224],
     color : new util.Color([1, 1, 1]), opacity : undefined,
     flipHoriz : false, flipVert : false,
     texRes : 128.0, interpolate : true, depth : 0.0 
@@ -155,6 +157,19 @@ async function experimentInit() {
     win: psychoJS.window,
   });
   mouse.mouseClock = new util.Clock();
+  // Initialize components for Routine "pause"
+  pauseClock = new util.Clock();
+  text_2 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_2',
+    text: '',
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [0, 0], height: 0.1,  wrapWidth: undefined, ori: 0.0,
+    color: new util.Color('white'),  opacity: undefined,
+    depth: 0.0 
+  });
+  
   // Create some handy timers
   globalClock = new util.Clock();  // to track the time since experiment started
   routineTimer = new util.CountdownTimer();  // to track time remaining of each (non-slip) routine
@@ -302,6 +317,9 @@ function trialsLoopBegin(trialsLoopScheduler, snapshot) {
       trialsLoopScheduler.add(trialRoutineBegin(snapshot));
       trialsLoopScheduler.add(trialRoutineEachFrame());
       trialsLoopScheduler.add(trialRoutineEnd());
+      trialsLoopScheduler.add(pauseRoutineBegin(snapshot));
+      trialsLoopScheduler.add(pauseRoutineEachFrame());
+      trialsLoopScheduler.add(pauseRoutineEnd());
       trialsLoopScheduler.add(endLoopIteration(trialsLoopScheduler, snapshot));
     }
     
@@ -465,6 +483,91 @@ function trialRoutineEnd() {
     if (mouse.clicked_name) {  psychoJS.experiment.addData('mouse.clicked_name', mouse.clicked_name[0])};
     if (mouse.clicked_image) {  psychoJS.experiment.addData('mouse.clicked_image', mouse.clicked_image[0])};
     
+    return Scheduler.Event.NEXT;
+  };
+}
+
+
+var pauseComponents;
+function pauseRoutineBegin(snapshot) {
+  return async function () {
+    TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
+    
+    //------Prepare to start Routine 'pause'-------
+    t = 0;
+    pauseClock.reset(); // clock
+    frameN = -1;
+    continueRoutine = true; // until we're told otherwise
+    routineTimer.add(1.500000);
+    // update component parameters for each repeat
+    // keep track of which components have finished
+    pauseComponents = [];
+    pauseComponents.push(text_2);
+    
+    for (const thisComponent of pauseComponents)
+      if ('status' in thisComponent)
+        thisComponent.status = PsychoJS.Status.NOT_STARTED;
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+function pauseRoutineEachFrame() {
+  return async function () {
+    //------Loop for each frame of Routine 'pause'-------
+    // get current time
+    t = pauseClock.getTime();
+    frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
+    // update/draw components on each frame
+    
+    // *text_2* updates
+    if (t >= 0.0 && text_2.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      text_2.tStart = t;  // (not accounting for frame time here)
+      text_2.frameNStart = frameN;  // exact frame index
+      
+      text_2.setAutoDraw(true);
+    }
+
+    frameRemains = 0.0 + 1.5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if (text_2.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      text_2.setAutoDraw(false);
+    }
+    // check for quit (typically the Esc key)
+    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
+      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
+    }
+    
+    // check if the Routine should terminate
+    if (!continueRoutine) {  // a component has requested a forced-end of Routine
+      return Scheduler.Event.NEXT;
+    }
+    
+    continueRoutine = false;  // reverts to True if at least one component still running
+    for (const thisComponent of pauseComponents)
+      if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
+        continueRoutine = true;
+        break;
+      }
+    
+    // refresh the screen if continuing
+    if (continueRoutine && routineTimer.getTime() > 0) {
+      return Scheduler.Event.FLIP_REPEAT;
+    } else {
+      return Scheduler.Event.NEXT;
+    }
+  };
+}
+
+
+function pauseRoutineEnd() {
+  return async function () {
+    //------Ending Routine 'pause'-------
+    for (const thisComponent of pauseComponents) {
+      if (typeof thisComponent.setAutoDraw === 'function') {
+        thisComponent.setAutoDraw(false);
+      }
+    }
     return Scheduler.Event.NEXT;
   };
 }

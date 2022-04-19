@@ -1,0 +1,3 @@
+﻿stimulus,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,image.started,image.stopped,mouse.started,mouse.stopped,mouse.x,mouse.y,mouse.leftButton,mouse.midButton,mouse.rightButton,mouse.time,participant,session,date,expName,psychopyVersion,frameRate,
+stimuli copy/jake-remy-QBAMncfwXr8-unsplash.jpeg,0,0,0,15,14.77892095898278,None,0.007620458258315921,None,,,,,,,3,001,2022_Apr_19_1150,9.60trial3,2021.2.3,59.854045989005044,
+stimuli copy/jordan-graff-87111nn8z_w-unsplash.jpeg,0,1,1,18,19.47156725008972,None,0.008829583646729589,None,14.0,-43.0,1,0,0,0.5477972500957549,3,001,2022_Apr_19_1150,9.60trial3,2021.2.3,59.854045989005044,

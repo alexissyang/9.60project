@@ -1,0 +1,4 @@
+﻿stimulus,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,image.started,image.stopped,mouse.started,mouse.stopped,mouse.x,mouse.y,mouse.leftButton,mouse.midButton,mouse.rightButton,mouse.time,participant,session,date,expName,psychopyVersion,frameRate,
+stimuli copy/diego-ph-xW42e724p00-unsplash.jpeg,0,0,0,10,13.744166624965146,None,0.004319291794672608,None,,,,,,,2,001,2022_Apr_19_1151,9.60trial3,2021.2.3,None,
+stimuli copy/long-truong-vRepMA0VQ54-unsplash.jpeg,0,1,1,20,18.640931583940983,None,0.013207457261160016,None,,,,,,,2,001,2022_Apr_19_1151,9.60trial3,2021.2.3,None,
+stimuli copy/eberhard-grossgasteiger-fTlXjG24mQ0-unsplash.jpeg,0,2,2,12,23.642817459069192,None,0.012860292103141546,None,319.0,128.0,1,0,0,0.5007036249153316,2,001,2022_Apr_19_1151,9.60trial3,2021.2.3,None,

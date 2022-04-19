@@ -1,0 +1,47 @@
+0.9888 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+7.9143 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+7.9157 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f9d7d302a90>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7f9d7725e748>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 225.0], screen=0, size=array([2880, 1800]), stencilBits=0, stereo=False, units='pix', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.9166 	EXP 	window1: mouseVisible = True
+7.9168 	EXP 	window1: recordFrameIntervals = False
+8.0250 	EXP 	window1: recordFrameIntervals = True
+8.8754 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+11.0207 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=500)
+11.5458 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128.0, units='pix', win=Window(...))
+11.5462 	EXP 	window1: mouseVisible = True
+11.5502 	DATA 	Mouse: Left button down, pos=(714,545)
+11.5508 	DATA 	Mouse:  Left button up, pos=(714,545)
+11.5914 	WARNING 	t of last frame was 2716.34ms (=1/0)
+11.5914 	EXP 	text: autoDraw = True
+12.1766 	WARNING 	t of last frame was 25.09ms (=1/39)
+12.2279 	WARNING 	t of last frame was 27.24ms (=1/36)
+12.9918 	WARNING 	t of last frame was 23.75ms (=1/42)
+13.0580 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+13.3128 	EXP 	Imported no_quotes.xlsx as conditions, 31 conditions, 1 params
+13.3195 	EXP 	Created sequence: random, trialTypes=31, nReps=1, seed=None
+13.3199 	EXP 	New trial (rep=0, index=0): {'stimulus': 'stimuli copy/diego-ph-xW42e724p00-unsplash.jpeg'}
+13.7342 	DATA 	Keypress: j
+13.7442 	EXP 	text: autoDraw = False
+13.7442 	EXP 	image: image = 'stimuli copy/diego-ph-xW42e724p00-unsplash.jpeg'
+13.7442 	EXP 	image: autoDraw = True
+18.3053 	EXP 	New trial (rep=0, index=1): {'stimulus': 'stimuli copy/long-truong-vRepMA0VQ54-unsplash.jpeg'}
+18.6409 	EXP 	image: autoDraw = False
+18.6409 	EXP 	image: image = 'stimuli copy/long-truong-vRepMA0VQ54-unsplash.jpeg'
+18.6409 	EXP 	image: autoDraw = True
+23.3004 	EXP 	New trial (rep=0, index=2): {'stimulus': 'stimuli copy/eberhard-grossgasteiger-fTlXjG24mQ0-unsplash.jpeg'}
+23.6428 	EXP 	image: autoDraw = False
+23.6428 	EXP 	image: image = 'stimuli copy/eberhard-grossgasteiger-fTlXjG24mQ0-unsplash.jpeg'
+23.6428 	EXP 	image: autoDraw = True
+24.1280 	DATA 	Mouse: Left button down, pos=(1039,578)
+24.1378 	EXP 	New trial (rep=0, index=3): {'stimulus': 'stimuli copy/mathew-schwartz-3z56aMRpjJ0-unsplash.jpeg'}
+24.2932 	DATA 	Mouse:  Left button up, pos=(1039,578)
+24.2984 	EXP 	image: autoDraw = False
+24.2984 	EXP 	image: image = 'stimuli copy/mathew-schwartz-3z56aMRpjJ0-unsplash.jpeg'
+24.2984 	EXP 	image: autoDraw = True
+29.1667 	DATA 	Keypress: escape
+29.3081 	EXP 	window1: mouseVisible = True
