@@ -1,8 +1,8 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Wed Apr 20 14:03:48 2022
+    on Wed Apr 20 14:30:00 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -309,21 +309,22 @@ for thisTrial in trials:
                     except:
                         clickableList = [image]
                     for obj in clickableList:
-                        buttons = mouse.getPressed()
-                        if obj.contains(mouse) & mouse.isPressedIn(obj, buttons=[0]):
+                        if obj.contains(mouse):
                             gotValidClick = True
                             mouse.clicked_name.append(obj.name)
                             mouse.clicked_image.append(obj.image)
-                            x, y = mouse.getPos()
-                            mouse.x.append(x)
-                            mouse.y.append(y)
-                            
-                            mouse.leftButton.append(buttons[0])
-                            mouse.midButton.append(buttons[1])
-                            mouse.rightButton.append(buttons[2])
-                            mouse.time.append(mouse.mouseClock.getTime())
-                    if gotValidClick:  # abort routine on response
-                        continueRoutine = False
+                    x, y = mouse.getPos()
+                    mouse.x.append(x)
+                    mouse.y.append(y)
+                    buttons = mouse.getPressed()
+                    mouse.leftButton.append(buttons[0])
+                    mouse.midButton.append(buttons[1])
+                    mouse.rightButton.append(buttons[2])
+                    mouse.time.append(mouse.mouseClock.getTime())
+        buttons = mouse.getPressed()
+        if mouse.isPressedIn(stimulus, buttons = [0]:
+            continueRoutine = False
+            trials.finished = True
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -349,16 +350,18 @@ for thisTrial in trials:
     trials.addData('image.started', image.tStartRefresh)
     trials.addData('image.stopped', image.tStopRefresh)
     # store data for trials (TrialHandler)
-    if len(mouse.x): trials.addData('mouse.x', mouse.x[0])
-    if len(mouse.y): trials.addData('mouse.y', mouse.y[0])
-    if len(mouse.leftButton): trials.addData('mouse.leftButton', mouse.leftButton[0])
-    if len(mouse.midButton): trials.addData('mouse.midButton', mouse.midButton[0])
-    if len(mouse.rightButton): trials.addData('mouse.rightButton', mouse.rightButton[0])
-    if len(mouse.time): trials.addData('mouse.time', mouse.time[0])
-    if len(mouse.clicked_name): trials.addData('mouse.clicked_name', mouse.clicked_name[0])
-    if len(mouse.clicked_image): trials.addData('mouse.clicked_image', mouse.clicked_image[0])
+    trials.addData('mouse.x', mouse.x)
+    trials.addData('mouse.y', mouse.y)
+    trials.addData('mouse.leftButton', mouse.leftButton)
+    trials.addData('mouse.midButton', mouse.midButton)
+    trials.addData('mouse.rightButton', mouse.rightButton)
+    trials.addData('mouse.time', mouse.time)
+    trials.addData('mouse.clicked_name', mouse.clicked_name)
+    trials.addData('mouse.clicked_image', mouse.clicked_image)
     trials.addData('mouse.started', mouse.tStart)
     trials.addData('mouse.stopped', mouse.tStop)
+    
+    
     
     # ------Prepare to start Routine "pause"-------
     continueRoutine = True

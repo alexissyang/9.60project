@@ -350,13 +350,6 @@ function trialRoutineBegin(snapshot) {
     // update component parameters for each repeat
     image.setImage(stimulus);
     // setup some python lists for storing info about the mouse
-    // current position of the mouse:
-    mouse.x = [];
-    mouse.y = [];
-    mouse.leftButton = [];
-    mouse.midButton = [];
-    mouse.rightButton = [];
-    mouse.time = [];
     mouse.clicked_name = [];
     mouse.clicked_image = [];
     gotValidClick = false; // until a click is received
@@ -375,9 +368,7 @@ function trialRoutineBegin(snapshot) {
 
 
 var frameRemains;
-var prevButtonState;
-var _mouseButtons;
-var _mouseXYs;
+var buttons;
 function trialRoutineEachFrame() {
   return async function () {
     //------Loop for each frame of Routine 'trial'-------
@@ -399,46 +390,11 @@ function trialRoutineEachFrame() {
     if (image.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       image.setAutoDraw(false);
     }
-    // *mouse* updates
-    if (t >= 0.0 && mouse.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      mouse.tStart = t;  // (not accounting for frame time here)
-      mouse.frameNStart = frameN;  // exact frame index
-      
-      mouse.status = PsychoJS.Status.STARTED;
-      prevButtonState = mouse.getPressed();  // if button is down already this ISN'T a new click
-      }
-    frameRemains = 0.0 + 5.0 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (mouse.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      mouse.status = PsychoJS.Status.FINISHED;
-  }
-    if (mouse.status === PsychoJS.Status.STARTED) {  // only update if started and not finished!
-      _mouseButtons = mouse.getPressed();
-      if (!_mouseButtons.every( (e,i,) => (e == prevButtonState[i]) )) { // button state changed?
-        prevButtonState = _mouseButtons;
-        if (_mouseButtons.reduce( (e, acc) => (e+acc) ) > 0) { // state changed to a new click
-          _mouseXYs = mouse.getPos();
-          mouse.x.push(_mouseXYs[0]);
-          mouse.y.push(_mouseXYs[1]);
-          mouse.leftButton.push(_mouseButtons[0]);
-          mouse.midButton.push(_mouseButtons[1]);
-          mouse.rightButton.push(_mouseButtons[2]);
-          mouse.time.push(mouse.mouseClock.getTime());
-          // check if the mouse was inside our 'clickable' objects
-          gotValidClick = false;
-          for (const obj of [image]) {
-            if (obj.contains(mouse)) {
-              gotValidClick = true;
-              mouse.clicked_name.push(obj.name)
-              mouse.clicked_image.push(obj.image)
-            }
-          }
-          if (gotValidClick === true) { // abort routine on response
-            continueRoutine = false;
-          }
-        }
-      }
+    buttons = mouse.getPressed();
+    if (mouse.isPressedIn(image, {"buttons": [0]})) {
+        continueRoutine = false;
     }
+    
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
       return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
@@ -466,6 +422,7 @@ function trialRoutineEachFrame() {
 }
 
 
+var time;
 function trialRoutineEnd() {
   return async function () {
     //------Ending Routine 'trial'-------
@@ -475,14 +432,11 @@ function trialRoutineEnd() {
       }
     }
     // store data for psychoJS.experiment (ExperimentHandler)
-    if (mouse.x) {  psychoJS.experiment.addData('mouse.x', mouse.x[0])};
-    if (mouse.y) {  psychoJS.experiment.addData('mouse.y', mouse.y[0])};
-    if (mouse.leftButton) {  psychoJS.experiment.addData('mouse.leftButton', mouse.leftButton[0])};
-    if (mouse.midButton) {  psychoJS.experiment.addData('mouse.midButton', mouse.midButton[0])};
-    if (mouse.rightButton) {  psychoJS.experiment.addData('mouse.rightButton', mouse.rightButton[0])};
-    if (mouse.time) {  psychoJS.experiment.addData('mouse.time', mouse.time[0])};
-    if (mouse.clicked_name) {  psychoJS.experiment.addData('mouse.clicked_name', mouse.clicked_name[0])};
-    if (mouse.clicked_image) {  psychoJS.experiment.addData('mouse.clicked_image', mouse.clicked_image[0])};
+    [x, y] = mouse.getPos();
+    psychoJS.experiment.addData("mouse.x", x);
+    psychoJS.experiment.addData("mouse.y", y);
+    time = mouse.mouseClock.getTime();
+    psychoJS.experiment.addData("time", time);
     
     return Scheduler.Event.NEXT;
   };
@@ -610,6 +564,8 @@ async function quitPsychoJS(message, isCompleted) {
   if (psychoJS.experiment.isEntryEmpty()) {
     psychoJS.experiment.nextEntry();
   }
+  
+  
   psychoJS.window.close();
   psychoJS.quit({message: message, isCompleted: isCompleted});
   

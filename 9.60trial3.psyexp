@@ -85,10 +85,10 @@
         <Param name="clickable" updates="constant" val="image" valType="list"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="forceEndRoutineOnPress" updates="constant" val="valid click" valType="str"/>
+        <Param name="forceEndRoutineOnPress" updates="constant" val="never" valType="str"/>
         <Param name="name" updates="None" val="mouse" valType="code"/>
         <Param name="newClicksOnly" updates="constant" val="True" valType="bool"/>
-        <Param name="saveMouseState" updates="None" val="on click" valType="str"/>
+        <Param name="saveMouseState" updates="None" val="never" valType="str"/>
         <Param name="saveParamsClickable" updates="constant" val="name,image" valType="list"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
@@ -96,9 +96,26 @@
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="5.0" valType="code"/>
-        <Param name="syncScreenRefresh" updates="None" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="timeRelativeTo" updates="constant" val="routine" valType="str"/>
       </MouseComponent>
+      <CodeComponent name="code">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="buttons = mouse.getPressed()&amp;#10;if mouse.isPressedIn(image, buttons = [0]):&amp;#10;    continueRoutine = False" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="buttons = mouse.getPressed();&amp;#10;if (mouse.isPressedIn(image, {&quot;buttons&quot;: [0]})) {&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="[x, y] = mouse.getPos();&amp;#10;psychoJS.experiment.addData(&quot;mouse.x&quot;, x);&amp;#10;psychoJS.experiment.addData(&quot;mouse.y&quot;, y);&amp;#10;time = mouse.mouseClock.getTime();&amp;#10;psychoJS.experiment.addData(&quot;time&quot;, time);&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="x, y = mouse.getPos()&amp;#10;thisExp.addData('mouse.x', x)&amp;#10;thisExp.addData('mouse.y', y)&amp;#10;time = mouse.mouseClock.getTime()&amp;#10;thisExp.addData('time', time)" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code" valType="code"/>
+      </CodeComponent>
     </Routine>
     <Routine name="instruction">
       <TextComponent name="text">

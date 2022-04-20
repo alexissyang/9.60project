@@ -1,0 +1,102 @@
+1.0835 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+7.5123 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+7.5136 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fa72c3e5b00>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fa72b01f860>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 225.0], screen=0, size=array([2880, 1800]), stencilBits=0, stereo=False, units='pix', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.5140 	EXP 	window1: mouseVisible = True
+7.5141 	EXP 	window1: recordFrameIntervals = False
+7.6013 	EXP 	window1: recordFrameIntervals = True
+8.5961 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+11.5039 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=24.0, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=500)
+12.0610 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([500., 500.]), texRes=128.0, units='pix', win=Window(...))
+12.0612 	EXP 	window1: mouseVisible = True
+12.0624 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=1.0, italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+12.0825 	WARNING 	t of last frame was 3486.79ms (=1/0)
+12.0825 	EXP 	text: autoDraw = True
+12.1286 	WARNING 	t of last frame was 20.82ms (=1/48)
+13.3152 	EXP 	Imported no_quotes.xlsx as conditions, 31 conditions, 1 params
+13.3181 	EXP 	Created sequence: random, trialTypes=31, nReps=1, seed=None
+13.3184 	EXP 	New trial (rep=0, index=0): {'stimulus': 'stimuli copy/darya-sev-QRdX9dO8poY-unsplash.jpeg'}
+13.4800 	DATA 	Keypress: j
+13.4882 	WARNING 	t of last frame was 185.94ms (=1/5)
+13.4882 	EXP 	text: autoDraw = False
+13.4882 	EXP 	image: image = 'stimuli copy/darya-sev-QRdX9dO8poY-unsplash.jpeg'
+13.4882 	EXP 	image: autoDraw = True
+14.4528 	DATA 	Mouse: Right button down, pos=(631,458)
+14.6046 	DATA 	Mouse:  Right button up, pos=(631,458)
+15.5052 	DATA 	Mouse: Left button down, pos=(592,481)
+15.5227 	EXP 	image: autoDraw = False
+15.5227 	EXP 	text_2: autoDraw = True
+15.6647 	DATA 	Mouse:  Left button up, pos=(592,481)
+17.0186 	EXP 	text_2: autoDraw = False
+17.0186 	EXP 	text_2: autoDraw = False
+17.0608 	EXP 	window1: mouseVisible = True
+0.6784 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+6.1448 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+6.1459 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f91b30bab00>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7f91b2d62be0>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 225.0], screen=0, size=array([2880, 1800]), stencilBits=0, stereo=False, units='pix', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.1462 	EXP 	window1: mouseVisible = True
+6.1463 	EXP 	window1: recordFrameIntervals = False
+6.2345 	EXP 	window1: recordFrameIntervals = True
+7.1955 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+9.9153 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=24.0, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=500)
+10.4662 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([500., 500.]), texRes=128.0, units='pix', win=Window(...))
+10.4664 	EXP 	window1: mouseVisible = True
+10.4676 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=1.0, italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+10.4814 	WARNING 	t of last frame was 3286.29ms (=1/0)
+10.4814 	EXP 	text: autoDraw = True
+11.2632 	EXP 	Imported no_quotes.xlsx as conditions, 31 conditions, 1 params
+11.2648 	EXP 	Created sequence: random, trialTypes=31, nReps=1, seed=None
+11.2654 	EXP 	New trial (rep=0, index=0): {'stimulus': 'stimuli copy/library-of-congress-VFTxZaIsDAs-unsplash.jpeg'}
+11.7156 	DATA 	Keypress: j
+11.7242 	WARNING 	t of last frame was 479.78ms (=1/2)
+11.7242 	EXP 	text: autoDraw = False
+11.7242 	EXP 	image: image = 'stimuli copy/library-of-congress-VFTxZaIsDAs-unsplash.jpeg'
+11.7242 	EXP 	image: autoDraw = True
+12.4944 	WARNING 	t of last frame was 25.45ms (=1/39)
+12.7554 	DATA 	Mouse: Right button down, pos=(632,515)
+12.9030 	DATA 	Mouse:  Right button up, pos=(632,515)
+13.4948 	WARNING 	t of last frame was 22.44ms (=1/44)
+13.8636 	DATA 	Mouse: Left button down, pos=(595,474)
+13.8734 	EXP 	image: autoDraw = False
+13.8734 	EXP 	text_2: autoDraw = True
+13.9733 	DATA 	Mouse:  Left button up, pos=(595,474)
+14.2940 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+15.3628 	EXP 	New trial (rep=0, index=1): {'stimulus': 'stimuli copy/mathew-schwartz-3z56aMRpjJ0-unsplash.jpeg'}
+15.5429 	EXP 	text_2: autoDraw = False
+15.5429 	EXP 	text_2: autoDraw = False
+15.5429 	EXP 	image: image = 'stimuli copy/mathew-schwartz-3z56aMRpjJ0-unsplash.jpeg'
+15.5429 	EXP 	image: autoDraw = True
+16.7372 	DATA 	Mouse: Left button down, pos=(741,548)
+16.7474 	EXP 	image: autoDraw = False
+16.7474 	EXP 	text_2: autoDraw = True
+16.8549 	DATA 	Mouse:  Left button up, pos=(741,548)
+18.2354 	EXP 	New trial (rep=0, index=2): {'stimulus': 'stimuli copy/james-haworth-Hm7BtNRT6eE-unsplash.jpeg'}
+18.4593 	EXP 	text_2: autoDraw = False
+18.4593 	EXP 	text_2: autoDraw = False
+18.4593 	EXP 	image: image = 'stimuli copy/james-haworth-Hm7BtNRT6eE-unsplash.jpeg'
+18.4593 	EXP 	image: autoDraw = True
+18.7696 	DATA 	Mouse: Right button down, pos=(1233,461)
+18.9295 	DATA 	Mouse:  Right button up, pos=(1233,461)
+20.2626 	DATA 	Mouse: Right button down, pos=(720,516)
+20.4045 	DATA 	Mouse:  Right button up, pos=(720,516)
+21.3794 	DATA 	Mouse: Left button down, pos=(675,515)
+21.3877 	EXP 	image: autoDraw = False
+21.3877 	EXP 	text_2: autoDraw = True
+21.5195 	DATA 	Mouse:  Left button up, pos=(675,515)
+22.8785 	EXP 	New trial (rep=0, index=3): {'stimulus': 'stimuli copy/aaron-burden-xNsoHwvoHnY-unsplash.jpeg'}
+23.2173 	DATA 	Keypress: escape
+23.2248 	EXP 	text_2: autoDraw = False
+23.2248 	EXP 	text_2: autoDraw = False
+23.2248 	EXP 	image: image = 'stimuli copy/aaron-burden-xNsoHwvoHnY-unsplash.jpeg'
+23.2248 	EXP 	image: autoDraw = True
+23.3385 	EXP 	window1: mouseVisible = True

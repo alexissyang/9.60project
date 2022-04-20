@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Wed Apr 20 13:53:39 2022
+    on Wed Apr 20 14:45:45 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -229,12 +229,6 @@ for thisTrial in trials:
     # update component parameters for each repeat
     image.setImage(stimulus)
     # setup some python lists for storing info about the mouse
-    mouse.x = []
-    mouse.y = []
-    mouse.leftButton = []
-    mouse.midButton = []
-    mouse.rightButton = []
-    mouse.time = []
     mouse.clicked_name = []
     mouse.clicked_image = []
     gotValidClick = False  # until a click is received
@@ -279,50 +273,9 @@ for thisTrial in trials:
                 image.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(image, 'tStopRefresh')  # time at next scr refresh
                 image.setAutoDraw(False)
-        # *mouse* updates
-        if mouse.status == NOT_STARTED and t >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            mouse.frameNStart = frameN  # exact frame index
-            mouse.tStart = t  # local t and not account for scr refresh
-            mouse.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(mouse, 'tStartRefresh')  # time at next scr refresh
-            mouse.status = STARTED
-            prevButtonState = mouse.getPressed()  # if button is down already this ISN'T a new click
-        if mouse.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > mouse.tStartRefresh + 5.0-frameTolerance:
-                # keep track of stop time/frame for later
-                mouse.tStop = t  # not accounting for scr refresh
-                mouse.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(mouse, 'tStopRefresh')  # time at next scr refresh
-                mouse.status = FINISHED
-        if mouse.status == STARTED:  # only update if started and not finished!
-            buttons = mouse.getPressed()
-            if buttons != prevButtonState:  # button state changed?
-                prevButtonState = buttons
-                if sum(buttons) > 0:  # state changed to a new click
-                    # check if the mouse was inside our 'clickable' objects
-                    gotValidClick = False
-                    try:
-                        iter(image)
-                        clickableList = image
-                    except:
-                        clickableList = [image]
-                    for obj in clickableList:
-                        if obj.contains(mouse):
-                            gotValidClick = True
-                            mouse.clicked_name.append(obj.name)
-                            mouse.clicked_image.append(obj.image)
-                    x, y = mouse.getPos()
-                    mouse.x.append(x)
-                    mouse.y.append(y)
-                    buttons = mouse.getPressed()
-                    mouse.leftButton.append(buttons[0])
-                    mouse.midButton.append(buttons[1])
-                    mouse.rightButton.append(buttons[2])
-                    mouse.time.append(mouse.mouseClock.getTime())
-                    if gotValidClick:  # abort routine on response
-                        continueRoutine = False
+        buttons = mouse.getPressed()
+        if mouse.isPressedIn(image, buttons = [0]):
+            continueRoutine = False
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -348,16 +301,13 @@ for thisTrial in trials:
     trials.addData('image.started', image.tStartRefresh)
     trials.addData('image.stopped', image.tStopRefresh)
     # store data for trials (TrialHandler)
-    if len(mouse.x): trials.addData('mouse.x', mouse.x[0])
-    if len(mouse.y): trials.addData('mouse.y', mouse.y[0])
-    if len(mouse.leftButton): trials.addData('mouse.leftButton', mouse.leftButton[0])
-    if len(mouse.midButton): trials.addData('mouse.midButton', mouse.midButton[0])
-    if len(mouse.rightButton): trials.addData('mouse.rightButton', mouse.rightButton[0])
-    if len(mouse.time): trials.addData('mouse.time', mouse.time[0])
-    if len(mouse.clicked_name): trials.addData('mouse.clicked_name', mouse.clicked_name[0])
-    if len(mouse.clicked_image): trials.addData('mouse.clicked_image', mouse.clicked_image[0])
-    trials.addData('mouse.started', mouse.tStart)
-    trials.addData('mouse.stopped', mouse.tStop)
+    trials.addData('mouse.started', mouse.tStartRefresh)
+    trials.addData('mouse.stopped', mouse.tStopRefresh)
+    x, y = mouse.getPos()
+    thisExp.addData('mouse.x', x)
+    thisExp.addData('mouse.y', y)
+    time = mouse.mouseClock.getTime()
+    thisExp.addData('time', time)
     
     # ------Prepare to start Routine "pause"-------
     continueRoutine = True
