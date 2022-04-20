@@ -422,6 +422,7 @@ function trialRoutineEachFrame() {
 }
 
 
+var _mouseXYs;
 var time;
 function trialRoutineEnd() {
   return async function () {
@@ -432,9 +433,9 @@ function trialRoutineEnd() {
       }
     }
     // store data for psychoJS.experiment (ExperimentHandler)
-    [x, y] = mouse.getPos();
-    psychoJS.experiment.addData("mouse.x", x);
-    psychoJS.experiment.addData("mouse.y", y);
+    _mouseXYs = mouse.getPos();
+    psychoJS.experiment.addData("mouse.x", _mouseXYs[0]);
+    psychoJS.experiment.addData("mouse.y", _mouseXYs[1]);
     time = mouse.mouseClock.getTime();
     psychoJS.experiment.addData("time", time);
     
