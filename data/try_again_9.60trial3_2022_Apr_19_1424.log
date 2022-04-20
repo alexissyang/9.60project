@@ -1,0 +1,77 @@
+1.4018 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+12.7968 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+12.8015 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fbab410aac8>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fba73b54b38>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 225.0], screen=0, size=array([2880, 1800]), stencilBits=0, stereo=False, units='pix', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+12.8023 	EXP 	window1: mouseVisible = True
+12.8025 	EXP 	window1: recordFrameIntervals = False
+12.8798 	EXP 	window1: recordFrameIntervals = True
+13.0640 	WARNING 	t of last frame was 27.03ms (=1/37)
+13.1295 	WARNING 	t of last frame was 24.20ms (=1/41)
+13.5796 	WARNING 	t of last frame was 28.39ms (=1/35)
+13.6470 	WARNING 	t of last frame was 29.45ms (=1/33)
+13.8354 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+16.1809 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=24.0, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=500)
+16.7187 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([500., 500.]), texRes=128.0, units='pix', win=Window(...))
+16.7188 	EXP 	window1: mouseVisible = True
+16.7203 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=1.0, italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='pix', win=Window(...), wrapWidth=500)
+16.7769 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+16.7768 	EXP 	text: autoDraw = True
+17.8829 	EXP 	Imported no_quotes.xlsx as conditions, 31 conditions, 1 params
+17.8877 	EXP 	Created sequence: random, trialTypes=31, nReps=1, seed=None
+17.8880 	EXP 	New trial (rep=0, index=0): {'stimulus': 'stimuli copy/dave-hoefler-oi65oz2xNag-unsplash.jpeg'}
+18.2835 	DATA 	Keypress: j
+18.2921 	EXP 	text: autoDraw = False
+18.2921 	EXP 	image: image = 'stimuli copy/dave-hoefler-oi65oz2xNag-unsplash.jpeg'
+18.2921 	EXP 	image: autoDraw = True
+19.1044 	DATA 	Mouse: Left button down, pos=(719,430)
+19.1152 	EXP 	image: autoDraw = False
+19.1152 	EXP 	text_2: autoDraw = True
+19.1836 	DATA 	Mouse:  Left button up, pos=(719,430)
+20.6050 	EXP 	New trial (rep=0, index=1): {'stimulus': 'stimuli copy/jordan-graff-87111nn8z_w-unsplash.jpeg'}
+20.8034 	EXP 	text_2: autoDraw = False
+20.8034 	EXP 	text_2: autoDraw = False
+20.8034 	EXP 	image: image = 'stimuli copy/jordan-graff-87111nn8z_w-unsplash.jpeg'
+20.8034 	EXP 	image: autoDraw = True
+21.4975 	DATA 	Mouse: Left button down, pos=(725,486)
+21.5035 	EXP 	image: autoDraw = False
+21.5035 	EXP 	text_2: autoDraw = True
+21.6508 	DATA 	Mouse:  Left button up, pos=(725,486)
+22.9974 	EXP 	New trial (rep=0, index=2): {'stimulus': 'stimuli copy/mae-mu-KXq1wGn_OXI-unsplash.jpeg'}
+23.1648 	EXP 	text_2: autoDraw = False
+23.1648 	EXP 	text_2: autoDraw = False
+23.1648 	EXP 	image: image = 'stimuli copy/mae-mu-KXq1wGn_OXI-unsplash.jpeg'
+23.1648 	EXP 	image: autoDraw = True
+24.2648 	DATA 	Mouse: Left button down, pos=(518,620)
+24.2791 	EXP 	image: autoDraw = False
+24.2791 	EXP 	text_2: autoDraw = True
+24.3823 	DATA 	Mouse:  Left button up, pos=(518,620)
+25.7828 	EXP 	New trial (rep=0, index=3): {'stimulus': 'stimuli copy/natalya-letunova-eCfCIwtKdsg-unsplash.jpeg'}
+26.2430 	EXP 	text_2: autoDraw = False
+26.2430 	EXP 	text_2: autoDraw = False
+26.2430 	EXP 	image: image = 'stimuli copy/natalya-letunova-eCfCIwtKdsg-unsplash.jpeg'
+26.2430 	EXP 	image: autoDraw = True
+27.1652 	DATA 	Mouse: Left button down, pos=(690,603)
+27.1750 	EXP 	image: autoDraw = False
+27.1750 	EXP 	text_2: autoDraw = True
+27.2661 	DATA 	Mouse:  Left button up, pos=(690,603)
+28.6640 	EXP 	New trial (rep=0, index=4): {'stimulus': 'stimuli copy/jared-rice-WbOn78k-ywU-unsplash.jpeg'}
+29.0810 	EXP 	text_2: autoDraw = False
+29.0810 	EXP 	text_2: autoDraw = False
+29.0810 	EXP 	image: image = 'stimuli copy/jared-rice-WbOn78k-ywU-unsplash.jpeg'
+29.0810 	EXP 	image: autoDraw = True
+29.8991 	DATA 	Mouse: Left button down, pos=(723,357)
+29.9122 	EXP 	image: autoDraw = False
+29.9122 	EXP 	text_2: autoDraw = True
+29.9996 	DATA 	Mouse:  Left button up, pos=(723,357)
+31.3975 	EXP 	New trial (rep=0, index=5): {'stimulus': 'stimuli copy/max-saeling-ymfYqeKN-FU-unsplash.jpeg'}
+31.8109 	EXP 	text_2: autoDraw = False
+31.8109 	EXP 	text_2: autoDraw = False
+31.8109 	EXP 	image: image = 'stimuli copy/max-saeling-ymfYqeKN-FU-unsplash.jpeg'
+31.8109 	EXP 	image: autoDraw = True
+32.2670 	DATA 	Keypress: escape
+32.4486 	EXP 	window1: mouseVisible = True
