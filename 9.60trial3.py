@@ -1,8 +1,8 @@
-﻿#!/usr/bin/env python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Wed Apr 20 12:09:48 2022
+    on Wed Apr 20 13:55:29 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -309,20 +309,20 @@ for thisTrial in trials:
                     except:
                         clickableList = [image]
                     for obj in clickableList:
-                        if obj.contains(mouse):
+                        if obj.contains(mouse) & mouse.isPressedIn(obj, buttons = [0]):
                             gotValidClick = True
                             mouse.clicked_name.append(obj.name)
                             mouse.clicked_image.append(obj.image)
-                    x, y = mouse.getPos()
-                    mouse.x.append(x)
-                    mouse.y.append(y)
-                    buttons = mouse.getPressed()
-                    mouse.leftButton.append(buttons[0])
-                    mouse.midButton.append(buttons[1])
-                    mouse.rightButton.append(buttons[2])
-                    mouse.time.append(mouse.mouseClock.getTime())
-                    # abort routine on response
-                    continueRoutine = False
+                            x, y = mouse.getPos()
+                            mouse.x.append(x)
+                            mouse.y.append(y)
+                            buttons = mouse.getPressed()
+                            mouse.leftButton.append(buttons[0])
+                            mouse.midButton.append(buttons[1])
+                            mouse.rightButton.append(buttons[2])
+                            mouse.time.append(mouse.mouseClock.getTime())
+                    if gotValidClick:  # abort routine on response
+                        continueRoutine = False
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
