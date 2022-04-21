@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Wed Apr 20 14:30:00 2022
+    on Wed Apr 20 22:13:58 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -280,7 +280,7 @@ for thisTrial in trials:
                 win.timeOnFlip(image, 'tStopRefresh')  # time at next scr refresh
                 image.setAutoDraw(False)
         # *mouse* updates
-        if mouse.status == NOT_STARTED and t >= 0.0-frameTolerance:
+        if mouse.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
             mouse.frameNStart = frameN  # exact frame index
             mouse.tStart = t  # local t and not account for scr refresh
@@ -321,10 +321,8 @@ for thisTrial in trials:
                     mouse.midButton.append(buttons[1])
                     mouse.rightButton.append(buttons[2])
                     mouse.time.append(mouse.mouseClock.getTime())
-        buttons = mouse.getPressed()
-        if mouse.isPressedIn(stimulus, buttons = [0]:
-            continueRoutine = False
-            trials.finished = True
+                    if gotValidClick:  # abort routine on response
+                        continueRoutine = False
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -350,18 +348,16 @@ for thisTrial in trials:
     trials.addData('image.started', image.tStartRefresh)
     trials.addData('image.stopped', image.tStopRefresh)
     # store data for trials (TrialHandler)
-    trials.addData('mouse.x', mouse.x)
-    trials.addData('mouse.y', mouse.y)
-    trials.addData('mouse.leftButton', mouse.leftButton)
-    trials.addData('mouse.midButton', mouse.midButton)
-    trials.addData('mouse.rightButton', mouse.rightButton)
-    trials.addData('mouse.time', mouse.time)
-    trials.addData('mouse.clicked_name', mouse.clicked_name)
-    trials.addData('mouse.clicked_image', mouse.clicked_image)
-    trials.addData('mouse.started', mouse.tStart)
-    trials.addData('mouse.stopped', mouse.tStop)
-    
-    
+    if len(mouse.x): trials.addData('mouse.x', mouse.x[0])
+    if len(mouse.y): trials.addData('mouse.y', mouse.y[0])
+    if len(mouse.leftButton): trials.addData('mouse.leftButton', mouse.leftButton[0])
+    if len(mouse.midButton): trials.addData('mouse.midButton', mouse.midButton[0])
+    if len(mouse.rightButton): trials.addData('mouse.rightButton', mouse.rightButton[0])
+    if len(mouse.time): trials.addData('mouse.time', mouse.time[0])
+    if len(mouse.clicked_name): trials.addData('mouse.clicked_name', mouse.clicked_name[0])
+    if len(mouse.clicked_image): trials.addData('mouse.clicked_image', mouse.clicked_image[0])
+    trials.addData('mouse.started', mouse.tStartRefresh)
+    trials.addData('mouse.stopped', mouse.tStopRefresh)
     
     # ------Prepare to start Routine "pause"-------
     continueRoutine = True
